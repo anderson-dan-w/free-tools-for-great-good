@@ -10,4 +10,4 @@ def get_readme():
 
 def get_readme_all_caps():
     text = get_readme()
-    return text.lower()
+    return text.upper()
