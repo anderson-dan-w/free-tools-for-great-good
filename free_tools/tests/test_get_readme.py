@@ -9,6 +9,10 @@ class Test_Get_Readme(unittest.TestCase):
         observed = get_readme.get_readme()
         self.assertIn(expect_contains, observed.lower())
 
+    def test_get_readme_all_caps(self):
+        expect_contains = "FREE TOOLS FOR GREAT GOOD"
+        observed = get_readme.get_readme_all_caps()
+        self.assertIn(expect_contains, observed)
 
 if __name__ == '__main__':
     unittest.main()
